@@ -10,7 +10,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <div className='bg-gray-100 px-4 py-5  md:px-24 lg:px-8'>
-      <div className='relative mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl flex items-center justify-between'>
+      <div className='my-container relative mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl flex items-center justify-between'>
         {/* Logo Section */}
         <Link to='/' className='inline-flex items-center'>
           <BoltIcon className='h-6 w-6 text-blue-500' />
@@ -24,7 +24,7 @@ const Header = () => {
           <li>
             <NavLink
               to='/'
-              className={({isActive}) =>(isActive ? 'text-blue-600' : '')}
+              className={({isActive}) =>(isActive ? 'active' : 'default')}
             >
               Home
             </NavLink>
@@ -32,7 +32,7 @@ const Header = () => {
           <li>
             <NavLink
               to='/books'
-              className={({isActive}) =>(isActive ? 'text-blue-600' : '')}
+              className={({isActive}) =>(isActive ? 'active' : 'default')}
             >
               Books
             </NavLink>
@@ -40,7 +40,7 @@ const Header = () => {
           <li>
             <NavLink
               to='/about'
-              className={({isActive}) =>(isActive ? 'text-blue-600' : '')}
+              className={({isActive}) =>(isActive ? 'active' : 'default')}
             >
               About us
             </NavLink>
