@@ -2,11 +2,20 @@ import React from 'react'
 import Lottie from 'lottie-react'
 import reader from '../assets/reader.json'
 import { ShoppingCartIcon } from '@heroicons/react/24/solid'
-import { Link } from 'react-router-dom'
+import { Link, useNavigation } from 'react-router-dom'
+import LoadingSpinner from './LoadingSpinner'
 
 const Home = () => {
+
+  const navigation = useNavigation();
+  if(navigation.state === 'loading') {
+    return <LoadingSpinner />;
+  }
+
+
+
   return (
-    <div className='my-container  flex flex-col items-center justify-between lg:flex-row'>
+    <div className='my-container mt-5 sm:mt-8 md:mt-12 lg:mt-24  flex flex-col items-center justify-between lg:flex-row'>
       {/* Text Content */}
       <div className='mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0'>
         <div className='max-w-xl mb-6 lg:mt-8'>
