@@ -13,14 +13,14 @@ const Header = () => {
       <div className="my-container relative mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl flex items-center justify-between">
         {/* Logo Section */}
         <Link to="/" className="inline-flex items-center">
-          <BoltIcon className="h-7 w-7 text-blue-500" />
-          <span className="ml-2 text-2xl font-bold tracking-wide text-gray-800">
+          <BoltIcon className="lg:h-9 lg:w-9 md:h-7 md:w-7 h-6 w-6 text-blue-500" />
+          <span className="ml-2 lg:text-3xl md:text-2xl text-xl font-bold tracking-wide text-gray-800">
             Next Page
           </span>
         </Link>
 
         {/* Nav Items Section */}
-        <ul className="items-center text-md font-bold hidden space-x-8 lg:flex">
+        <ul className="items-center text-lg font-bold hidden space-x-8 lg:flex">
           <li>
             <NavLink
               to="/"

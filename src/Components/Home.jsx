@@ -12,7 +12,7 @@ const Home = () => {
   }
 
   return (
-    <div className="my-container h-[calc(100vh-260px)] mt-5 sm:mt-8 md:mt-12 lg:mt-24  flex flex-col items-center justify-between lg:flex-row">
+    <div className="my-container mb-48 lg:mb-0 mt-5 sm:mt-8 md:mt-12 lg:mt-24  flex flex-col items-center justify-between lg:flex-row">
       {/* Text Content */}
       <div className="mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0">
         <div className="max-w-xl mb-6 lg:mt-8">
